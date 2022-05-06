@@ -1,0 +1,17 @@
+category,flightNumber,seatAvailable,price,arrivalCity,departureCity
+Economy,SJ456,3,250,Seattle,San Jose
+Premium Economy,BY110,5,500,San Francisco,New York
+Business,BY110,5,2000,San Francisco,New York
+Economy,CA453,5,300,Seattle,San Jose
+Business,CA453,5,1500,Seattle,San Jose
+Economy,KL908,4,1200,New York,Amsterdam
+Business,KL908,2,1200,New York,Amsterdam
+Economy,UA868,2,1500,San Francisco,London
+Business,UA868,1,3500,San Francisco,London
+Premium Economy,UA868,2,3000,San Francisco,London
+Economy,UA767,1,1000,San Francisco,Chicago
+Business,UA767,1,2500,San Francisco,Chicago
+Premium Economy,UA767,1,1500,San Francisco,Chicago
+Economy,DL786,1,800,Texas,New York
+Business,DL786,1,2000,San Texas,New York
+Premium Economy,DL786,1,1400,Texas,New York
