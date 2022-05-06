@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.cmpe202.individualproject.reader.CSVReaderTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.016 s <<< FAILURE! - in com.cmpe202.individualproject.reader.CSVReaderTest
-com.cmpe202.individualproject.reader.CSVReaderTest.checkReadCsv  Time elapsed: 0.016 s  <<< ERROR!
-java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at com.cmpe202.individualproject.reader.CSVReaderTest.checkReadCsv(CSVReaderTest.java:20)
-

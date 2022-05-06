@@ -1,5 +1,0 @@
-class Output
-!!!133634.java!!!	writeToFile(in bookingName : String, in flightNumber : String, in category : String, in numberOfSeats : String, in finalPrice : String) : void
-
-            String[] record = {bookingName ,flightNumber, category, numberOfSeats, finalPrice};
-            PropValue.outputRecord.add(record);
