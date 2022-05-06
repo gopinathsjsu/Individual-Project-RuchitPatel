@@ -1,0 +1,50 @@
+format 224
+
+classcanvas 128002 class_ref 128898 // FlightData
+  classdiagramsettings member_max_width 0 end
+  xyz 546 278 2000
+end
+classcanvas 128130 class_ref 130690 // RunClient
+  classdiagramsettings member_max_width 0 end
+  xyz 191 293 2010
+end
+relationcanvas 128258 relation_ref 130818 // <unidirectional association>
+  from ref 128130 z 2011 to point 161 293
+  line 128386 z 2011 to point 161 323
+  line 128514 z 2011 to ref 128130
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128642 relation_ref 130946 // <unidirectional association>
+  from ref 128130 z 2011 to point 161 293
+  line 128770 z 2011 to point 161 323
+  line 128898 z 2011 to ref 128130
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130178 relation_ref 139138 // <generalisation>
+  from ref 128130 z 2011 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130306 relation_ref 139266 // <unidirectional association>
+  decenter_begin 330
+  from ref 128002 z 2001 to point 635 222
+  line 130690 z 2001 to point 579 223
+  line 130818 z 2001 to point 516 222
+  line 130434 z 2001 to point 516 308
+  line 130562 z 2001 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130946 relation_ref 139010 // <unidirectional association>
+  from ref 128130 z 2011 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 131074 relation_ref 140802 // <unidirectional association>
+  from ref 128130 z 2011 to ref 128002
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+end

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <row>
+    <CardNumber>5410000000000000</CardNumber>
+    <CardType>Master Card</CardType>
+  </row>
+  <row>
+    <CardNumber>4120000000000</CardNumber>
+    <CardType>Visa Card</CardType>
+  </row>
+  <row>
+    <CardNumber>341000000000000</CardNumber>
+    <CardType>American Express Card</CardType>
+  </row>
+  <row>
+    <CardNumber>6011000000000000</CardNumber>
+    <CardType>Discover Card</CardType>
+  </row>
+</root>

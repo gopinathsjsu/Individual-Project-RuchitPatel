@@ -1,0 +1,35 @@
+format 224
+"flight_booking_app_ruchit" // flight_booking_app_ruchit
+  revision 1
+  modified_by 2 "HP WORLD ANAND"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  classcompositediagramsettings end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  objectcompositediagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  java_dir "D:/202/idni/flight_booking_app_ruchit/"
+  package_ref 128130 // src
+end

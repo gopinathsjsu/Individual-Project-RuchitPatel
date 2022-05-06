@@ -1,0 +1,20 @@
+class ReadInput
+!!!134530.java!!!	ReadInput()
+        //No argument constructor
+!!!134658.java!!!	convertCsv(in csvFile : String) : List<Map<?, ?>>
+
+        File read = new File(csvFile);
+        List<Map<?,?>> input = new ArrayList<>();
+        try {
+            CsvSchema csv = CsvSchema.emptySchema().withHeader();
+            CsvMapper csvMapper = new CsvMapper();
+            MappingIterator<Map<?,?>> mappingIterator =  csvMapper.reader().forType(Map.class).with(csv).readValues(read);
+            System.out.println();
+            while(mappingIterator.hasNext()){
+                input.add(mappingIterator.next());
+            }
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+        System.out.println(input);
+        return input;

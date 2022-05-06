@@ -1,0 +1,5 @@
+class ErrorReason
+!!!134274.java!!!	writeToFile(in bookingName : String, in flightNumber : String, in category : String, in numberOfSeats : String, in finalPrice : String) : void
+            String reason = category;
+            String content = "Please check"+"  "+bookingName+":"+"  "+ reason;
+            PropValue.errorRecord.add(content);

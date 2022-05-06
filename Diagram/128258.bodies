@@ -1,0 +1,3 @@
+class CardChain
+!!!128386.java!!!	cardValidation(in cardNumber : String) : boolean
+        return visa.isValidCard(cardNumber);

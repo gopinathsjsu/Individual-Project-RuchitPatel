@@ -1,0 +1,462 @@
+format 224
+"ReaderWriter" // flight_booking_app_ruchit::src::main::java::ReaderWriter
+  revision 2
+  modified_by 2 "HP WORLD ANAND"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  classcompositediagramsettings end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  objectcompositediagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  java_dir "D:/202/idni/flight_booking_app_ruchit/src/main/java/ReaderWriter/"
+  java_package "ReaderWriter"
+  classview 128258 "ReaderWriter"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    classcompositediagramsettings end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    objectcompositediagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 129666 "CSVtoJSON"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 133378 "readCsvToJson"
+	class_operation public explicit_return_type "List<Map<?,?>>"
+	nparams 1
+	  param in name "csvFile" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      class 129794 "Output"
+	visibility public 
+	cpp_decl ""
+	static java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	mysql_decl ""
+	
+	classrelation 129666 // <realization>
+	  relation 129666 -_-|>
+	    a public
+	      java "${type}"
+	      classrelation_ref 129666 // <realization>
+	    b parent class_ref 129922 // Writer
+	end
+
+	operation 133634 "writeToFile"
+	  public explicit_return_type "void"
+	  nparams 5
+	    param in name "bookingName" explicit_type "String"
+	    param in name "flightNumber" explicit_type "String"
+	    param in name "category" explicit_type "String"
+	    param in name "numberOfSeats" explicit_type "String"
+	    param in name "finalPrice" explicit_type "String"
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}, ${t4} ${p4}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  java_annotation "@Override
+"
+	  
+	  
+	  
+	end
+
+	classrelation 139650 // <composition>
+	  relation_ref 139522 // <composition>
+	end
+
+	classrelation 141442 // <dependency>
+	  relation 141314 -_->
+	    a public
+	      classrelation_ref 141442 // <dependency>
+	    b parent class_ref 129794 // Output
+	end
+      end
+    end
+
+    class 129922 "Writer"
+      visibility public stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}interface ${name}${extends} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 133506 "writeToFile"
+	public explicit_return_type "void"
+	nparams 5
+	  param in name "bookingName" explicit_type "String"
+	  param in name "flightNumber" explicit_type "String"
+	  param in name "category" explicit_type "String"
+	  param in name "numberOfSeats" explicit_type "String"
+	  param in name "finalPrice" explicit_type "String"
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}, ${t4} ${p4}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 130050 "CSVWrite"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 133762 "convertToCSV"
+	public explicit_return_type "String"
+	nparams 1
+	  param inout name "data" explicit_type "String"
+	multiplicity "[]"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0}[] ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 133890 "escapeSpecialCharacters"
+	public explicit_return_type "String"
+	nparams 1
+	  param in name "data" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 134018 "addRecordToCSV"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "dataLines" explicit_type "LinkedList<String[]>"
+	nexceptions 1
+	  explicit_exception "IOException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 134146 "addRecordToErrorFile"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "content" explicit_type "List<String>"
+	nexceptions 1
+	  explicit_exception "IOException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      class 130178 "ErrorReason"
+	visibility public 
+	cpp_decl ""
+	static java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+	php_decl ""
+	python_2_2 python_decl ""
+	idl_decl ""
+	explicit_switch_type ""
+	mysql_decl ""
+	
+	associated_diagram classdiagram_ref 134914 // Whole
+	classrelation 129794 // <realization>
+	  relation 129794 -_-|>
+	    a public
+	      java "${type}"
+	      classrelation_ref 129794 // <realization>
+	    b parent class_ref 129922 // Writer
+	end
+
+	operation 134274 "writeToFile"
+	  public explicit_return_type "void"
+	  nparams 5
+	    param in name "bookingName" explicit_type "String"
+	    param in name "flightNumber" explicit_type "String"
+	    param in name "category" explicit_type "String"
+	    param in name "numberOfSeats" explicit_type "String"
+	    param in name "finalPrice" explicit_type "String"
+	  
+	  preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}, ${t4} ${p4}${)}${throws}${staticnl}{
+  ${body}}
+"
+	  java_annotation "@Override
+"
+	  
+	  
+	  
+	end
+
+	classrelation 140546 // <realization>
+	  relation 140418 -_-|>
+	    a public
+	      classrelation_ref 140546 // <realization>
+	    b parent class_ref 130050 // CSVWrite
+	end
+      end
+
+      classrelation 139522 // <composition>
+	relation 139522 *---
+	  a role_name "" private
+	    classrelation_ref 139522 // <composition>
+	  b role_name "" private
+	    classrelation_ref 139650 // <composition>
+      end
+
+      classrelation 139906 // <unidirectional association>
+	relation 139778 --->
+	  a role_name "" private
+	    classrelation_ref 139906 // <unidirectional association>
+	  b parent class_ref 129794 // Output
+      end
+    end
+
+    class 130306 "PropertiesReader"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 130178 "prop"
+	public explicit_type "Properties"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      operation 134402 "loadPropertiesFile"
+	public explicit_return_type "Properties"
+	nparams 0
+	nexceptions 1
+	  explicit_exception "IOException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 130434 "ReadInput"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 134530 "ReadInput"
+	public explicit_return_type ""
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 134658 "convertCsv"
+	public explicit_return_type "List<Map<?, ?>>"
+	nparams 1
+	  param in name "csvFile" explicit_type "String"
+	nexceptions 1
+	  explicit_exception "IOException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    classdiagram 134786 "Reader Writer"
+      classdiagramsettings draw_all_relations no member_max_width 0 end
+      size A4
+    end
+  end
+
+  deploymentview 128258 "ReaderWriter"
+    //deployment diagram settings
+    deploymentdiagramsettings
+     end
+    artifact 129666 "Writer"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+${definition}"
+      associated_elems
+	class_ref 129922 // Writer
+      end
+    end
+
+    artifact 129794 "CSVtoJSON"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import com.fasterxml.jackson.databind.MappingIterator;
+import com.fasterxml.jackson.dataformat.csv.CsvMapper;
+import com.fasterxml.jackson.dataformat.csv.CsvSchema;
+import test.PropValue;
+import java.io.*;
+import java.util.*;
+${definition}"
+      associated_elems
+	class_ref 129666 // CSVtoJSON
+      end
+    end
+
+    artifact 129922 "CSVWrite"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import test.PropValue;
+import java.io.*;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+${definition}"
+      associated_elems
+	class_ref 130050 // CSVWrite
+      end
+    end
+
+    artifact 130050 "PropertiesReader"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import java.io.IOException;
+import java.util.Properties;
+import java.io.InputStream;
+${definition}"
+      associated_elems
+	class_ref 130306 // PropertiesReader
+      end
+    end
+
+    artifact 130178 "ReadInput"
+      stereotype "source"
+      java_src "${comment}
+${package}
+${imports}
+import com.fasterxml.jackson.databind.MappingIterator;
+import com.fasterxml.jackson.dataformat.csv.CsvMapper;
+import com.fasterxml.jackson.dataformat.csv.CsvSchema;
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+${definition}"
+      associated_elems
+	class_ref 130434 // ReadInput
+      end
+    end
+  end
+end

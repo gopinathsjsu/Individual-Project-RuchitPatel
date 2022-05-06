@@ -1,0 +1,41 @@
+format 224
+"java" // flight_booking_app_ruchit::src::main::java
+  revision 1
+  modified_by 2 "HP WORLD ANAND"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  classcompositediagramsettings end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  objectcompositediagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  java_dir "D:/202/idni/flight_booking_app_ruchit/src/main/java/"
+  package_ref 128514 // Cards
+
+  package_ref 128642 // Flight
+
+  package_ref 128770 // ReaderWriter
+
+  package_ref 128898 // test
+end

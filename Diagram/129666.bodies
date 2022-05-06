@@ -1,0 +1,18 @@
+class CSVtoJSON
+!!!133378.java!!!	readCsvToJson(in csvFile : String) : List<Map<?,?>>
+        File read = new File(csvFile);
+        //this list hold each record in CSV file as a key value pair with header as key and value as values.
+        List<Map<?,?>> flights = new ArrayList<>();
+        try {
+            CsvSchema csv = CsvSchema.emptySchema().withHeader();
+            CsvMapper csvMapper = new CsvMapper();
+            MappingIterator<Map<?,?>> mappingIterator =  csvMapper.reader().forType(Map.class).with(csv).readValues(read);
+            System.out.println();
+            while(mappingIterator.hasNext()){
+                flights.add(mappingIterator.next());
+            }
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+
+        return flights;

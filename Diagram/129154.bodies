@@ -1,0 +1,17 @@
+class Price
+!!!132738.java!!!	totalPrice(inout inputfile : InputFile, inout dbInstance : FlightData) : double
+
+        String flightNumber = inputfile.getFlightNumber();
+        int seatAvailability = inputfile.getNumberOfSeats();
+        String category = inputfile.getSeatCategory();
+
+        ArrayList<Flight> flightArrayList = dbInstance.getFlightArrayList();
+
+        for (Flight entry : flightArrayList) {
+            if (entry.getFlightNumber().equalsIgnoreCase(flightNumber) && entry.getCategory().equalsIgnoreCase(category)) {
+                double finalPrice = seatAvailability * entry.getPrice();
+                System.out.println("Total Price for the seats" + " $" + finalPrice);
+                return finalPrice;
+            }
+        }
+        return 0.0;

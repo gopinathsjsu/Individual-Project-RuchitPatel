@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.cmpe202.individualproject.handlers.AmexTest" time="0.031" tests="2" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\202\idni\individual-project-supriyameduri9-master\target\test-classes;D:\202\idni\individual-project-supriyameduri9-master\target\classes;C:\Users\HP WORLD ANAND\.m2\repository\junit\junit\4.13\junit-4.13.jar;C:\Users\HP WORLD ANAND\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\HP WORLD ANAND\.m2\repository\org\junit\platform\junit-platform-launcher\1.7.1\junit-platform-launcher-1.7.1.jar;C:\Users\HP WORLD ANAND\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\HP WORLD ANAND\.m2\repository\org\junit\platform\junit-platform-engine\1.7.1\junit-platform-engine-1.7.1.jar;C:\Users\HP WORLD ANAND\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\HP WORLD ANAND\.m2\repository\org\junit\platform\junit-platform-commons\1.7.1\junit-platform-commons-1.7.1.jar;C:\Users\HP WORLD ANAND\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.1\junit-jupiter-engine-5.7.1.jar;C:\Users\HP WORLD ANAND\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.1\junit-jupiter-api-5.7.1.jar;C:\Users\HP WORLD ANAND\.m2\repository\org\junit\vintage\junit-vintage-engine\5.6.2\junit-vintage-engine-5.6.2.jar;C:\Users\HP WORLD ANAND\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\HP WORLD ANAND\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\HP WORLD ANAND\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\HP WORLD ANAND\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.38\tomcat-embed-core-9.0.38.jar;C:\Users\HP WORLD ANAND\.m2\repository\org\apache\tomcat\tomcat-annotations-api\9.0.38\tomcat-annotations-api-9.0.38.jar;C:\Users\HP WORLD ANAND\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.11.2\jackson-databind-2.11.2.jar;C:\Users\HP WORLD ANAND\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.11.2\jackson-annotations-2.11.2.jar;C:\Users\HP WORLD ANAND\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.11.2\jackson-core-2.11.2.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.13.8-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\HP WORLD ANAND\AppData\Local\Temp\surefire6053002482084343694\surefirebooter5641372787614631602.jar C:\Users\HP WORLD ANAND\AppData\Local\Temp\surefire6053002482084343694 2022-04-21T17-39-09_550-jvmRun1 surefire3575264459386915595tmp surefire_013280739966253460023tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\202\idni\individual-project-supriyameduri9-master\target\test-classes;D:\202\idni\individual-project-supriyameduri9-master\target\classes;C:\Users\HP WORLD ANAND\.m2\repository\junit\junit\4.13\junit-4.13.jar;C:\Users\HP WORLD ANAND\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\HP WORLD ANAND\.m2\repository\org\junit\platform\junit-platform-launcher\1.7.1\junit-platform-launcher-1.7.1.jar;C:\Users\HP WORLD ANAND\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\HP WORLD ANAND\.m2\repository\org\junit\platform\junit-platform-engine\1.7.1\junit-platform-engine-1.7.1.jar;C:\Users\HP WORLD ANAND\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\HP WORLD ANAND\.m2\repository\org\junit\platform\junit-platform-commons\1.7.1\junit-platform-commons-1.7.1.jar;C:\Users\HP WORLD ANAND\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.1\junit-jupiter-engine-5.7.1.jar;C:\Users\HP WORLD ANAND\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.1\junit-jupiter-api-5.7.1.jar;C:\Users\HP WORLD ANAND\.m2\repository\org\junit\vintage\junit-vintage-engine\5.6.2\junit-vintage-engine-5.6.2.jar;C:\Users\HP WORLD ANAND\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\HP WORLD ANAND\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\HP WORLD ANAND\.m2\repository\com\googlecode\json-simple\json-simple\1.1.1\json-simple-1.1.1.jar;C:\Users\HP WORLD ANAND\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.38\tomcat-embed-core-9.0.38.jar;C:\Users\HP WORLD ANAND\.m2\repository\org\apache\tomcat\tomcat-annotations-api\9.0.38\tomcat-annotations-api-9.0.38.jar;C:\Users\HP WORLD ANAND\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.11.2\jackson-databind-2.11.2.jar;C:\Users\HP WORLD ANAND\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.11.2\jackson-annotations-2.11.2.jar;C:\Users\HP WORLD ANAND\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.11.2\jackson-core-2.11.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\HP WORLD ANAND"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-10-19"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.13.8-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\202\idni\individual-project-supriyameduri9-master"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\HP WORLD ANAND\AppData\Local\Temp\surefire6053002482084343694\surefirebooter5641372787614631602.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.13+8"/>
+    <property name="user.name" value="HP WORLD ANAND"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-11.0.13+8"/>
+    <property name="localRepository" value="C:\Users\HP WORLD ANAND\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\HPWORL~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.13"/>
+    <property name="user.dir" value="D:\202\idni\individual-project-supriyameduri9-master"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.13.8-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-11.0.13.8-hotspot\bin;C:\Windows\System32\;C:\Program Files\GitHub CLI\;D:\apache-maven-3.8.5\bin;C:\Ruby31-x64\bin;C:\Users\HP WORLD ANAND\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\HP WORLD ANAND\AppData\Local\Programs\Python\Python38\;C:\Users\HP WORLD ANAND\AppData\Local\Microsoft\WindowsApps;C:\Users\HP WORLD ANAND\AppData\Local\atom\bin;C:\Users\HP WORLD ANAND\AppData\Local\Microsoft\WindowsApps;C:\Users\HP WORLD ANAND\AppData\Roaming\npm;C:\Users\HP WORLD ANAND\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\HP WORLD ANAND\AppData\Local\GitHubDesktop\bin;C:\Users\HP WORLD ANAND\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\HP WORLD ANAND\AppData\Local\Programs\Python\Python38\Scripts;C:\Windows\System32\;D:\IntelliJ IDEA Community Edition 2021.3.1\bin;;D:\apache-maven-3.8.5\bin;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="11.0.13+8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="checkValidAmex" classname="com.cmpe202.individualproject.handlers.AmexTest" time="0.031"/>
+  <testcase name="checkInvalidAmex" classname="com.cmpe202.individualproject.handlers.AmexTest" time="0"/>
+</testsuite>

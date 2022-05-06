@@ -1,0 +1,3 @@
+class CreditCardValidator
+!!!128002.java!!!	SetCreditCard(inout nextCard : CreditCardValidator) : void
+        this.nextCard = nextCard;
